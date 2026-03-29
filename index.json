@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-03-29T18:00:00Z",
+  "generated_at": "2026-03-29T19:00:00Z",
   "base_url": "https://raw.githubusercontent.com/Stylith/nucleon-core-themes/main/",
   "entries": [
     {
@@ -13,12 +13,12 @@
       "path": "terminal/dashboard/"
     },
     {
-      "id": "robco-heritage",
-      "name": "RobCo Heritage",
-      "description": "Restores the original RobCo Industries terminal presentation with the iconic header and bracket-wrapped menus.",
+      "id": "robco",
+      "name": "RobCo",
+      "description": "The original RobCo Industries terminal with iconic header and bracket-wrapped menus.",
       "version": "1.0.0",
       "kind": "TerminalTheme",
-      "path": "terminal/robco-heritage/"
+      "path": "terminal/robco/"
     }
   ]
 }

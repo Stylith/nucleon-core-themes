@@ -1,12 +1,12 @@
 {
-  "id": "robco-heritage",
-  "name": "RobCo Heritage",
-  "description": "Restores the original RobCo Industries terminal presentation. Features the iconic ROBCO INDUSTRIES header, bracket-wrapped menus, and full-row selection highlighting.",
+  "id": "robco",
+  "name": "RobCo",
+  "description": "The original RobCo Industries terminal presentation. Features the iconic ROBCO INDUSTRIES header, bracket-wrapped menus, and full-row selection highlighting.",
   "version": "1.0.0",
   "kind": "TerminalTheme",
   "renderer": {
     "type": "Builtin",
-    "id": "classic"
+    "id": "robco"
   },
   "branding": {
     "header_lines": [
