@@ -1,0 +1,65 @@
+{
+  "id": "dashboard",
+  "name": "Dashboard",
+  "description": "Multi-panel terminal interface with persistent navigation sidebar, system status widgets, quick actions, and recent files. The default Nucleon terminal experience.",
+  "version": "1.0.0",
+  "kind": "TerminalTheme",
+  "builtin": true,
+  "renderer": {
+    "type": "Builtin",
+    "id": "dashboard"
+  },
+  "options_schema": [
+    {
+      "key": "show_nav_panel",
+      "label": "Show Navigation Panel",
+      "description": "Display the persistent navigation sidebar.",
+      "kind": { "type": "Bool", "default": true }
+    },
+    {
+      "key": "nav_width",
+      "label": "Navigation Width",
+      "description": "Width of the navigation panel in columns.",
+      "kind": { "type": "Int", "min": 14, "max": 30, "default": 20 }
+    },
+    {
+      "key": "show_system_status",
+      "label": "Show System Status",
+      "description": "Display CPU, memory, and disk usage on the home screen.",
+      "kind": { "type": "Bool", "default": true }
+    },
+    {
+      "key": "show_recent_files",
+      "label": "Show Recent Files",
+      "description": "Display recently accessed files on the home screen.",
+      "kind": { "type": "Bool", "default": true }
+    },
+    {
+      "key": "show_quick_actions",
+      "label": "Show Quick Actions",
+      "description": "Display quick-launch navigation tiles on the home screen.",
+      "kind": { "type": "Bool", "default": true }
+    },
+    {
+      "key": "clock_format",
+      "label": "Clock Format",
+      "description": "Time display format in the header bar.",
+      "kind": { "type": "Choice", "choices": ["24h", "12h"], "default": "24h" }
+    },
+    {
+      "key": "status_shortcuts",
+      "label": "Show Status Shortcuts",
+      "description": "Display keyboard shortcut hints in the status bar.",
+      "kind": { "type": "Bool", "default": true }
+    }
+  ],
+  "default_options": {
+    "show_nav_panel": true,
+    "nav_width": 20,
+    "show_system_status": true,
+    "show_recent_files": true,
+    "show_quick_actions": true,
+    "clock_format": "24h",
+    "status_shortcuts": true
+  }
+}

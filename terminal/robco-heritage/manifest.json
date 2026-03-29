@@ -1,0 +1,92 @@
+{
+  "id": "robco-heritage",
+  "name": "RobCo Heritage",
+  "description": "Restores the original RobCo Industries terminal presentation. Features the iconic ROBCO INDUSTRIES header, bracket-wrapped menus, and full-row selection highlighting.",
+  "version": "1.0.0",
+  "kind": "TerminalTheme",
+  "renderer": {
+    "type": "Builtin",
+    "id": "classic"
+  },
+  "branding": {
+    "header_lines": [
+      "ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM",
+      "COPYRIGHT 2075-2077 ROBCO INDUSTRIES",
+      "-SERVER 1-"
+    ]
+  },
+  "options_schema": [
+    {
+      "key": "separator_char",
+      "label": "Separator Character",
+      "description": "Character used for horizontal separators.",
+      "kind": { "type": "Choice", "choices": ["=", "-", "*", "#"], "default": "=" }
+    },
+    {
+      "key": "show_separators",
+      "label": "Show Separators",
+      "description": "Display horizontal separator lines.",
+      "kind": { "type": "Bool", "default": true }
+    },
+    {
+      "key": "menu_alignment",
+      "label": "Menu Alignment",
+      "description": "How menu items are aligned on screen.",
+      "kind": { "type": "Choice", "choices": ["Left", "Center"], "default": "Left" }
+    },
+    {
+      "key": "selection_style",
+      "label": "Selection Style",
+      "description": "How the selected menu item is highlighted.",
+      "kind": { "type": "Choice", "choices": ["Full Row", "Text Only"], "default": "Full Row" }
+    },
+    {
+      "key": "selection_marker",
+      "label": "Selection Marker",
+      "description": "Text prefix for the selected item.",
+      "kind": { "type": "Choice", "choices": ["> ", ">> ", "* ", ""], "default": "> " }
+    },
+    {
+      "key": "header_visible",
+      "label": "Show Header",
+      "description": "Display the ROBCO INDUSTRIES branding header at the top.",
+      "kind": { "type": "Bool", "default": true }
+    },
+    {
+      "key": "subtitle_underlined",
+      "label": "Underline Subtitle",
+      "description": "Draw an underline below the subtitle text.",
+      "kind": { "type": "Bool", "default": true }
+    },
+    {
+      "key": "content_margin",
+      "label": "Content Margin",
+      "description": "Columns of margin on each side of content.",
+      "kind": { "type": "Int", "min": 0, "max": 10, "default": 3 }
+    },
+    {
+      "key": "bracket_menus",
+      "label": "Menus Between Brackets",
+      "description": "Wrap menu items in square brackets (e.g., [Option]).",
+      "kind": { "type": "Bool", "default": true }
+    },
+    {
+      "key": "extended_highlighting",
+      "label": "Extended Highlighting",
+      "description": "Extend selection highlight to fill the full row width.",
+      "kind": { "type": "Bool", "default": true }
+    }
+  ],
+  "default_options": {
+    "separator_char": "=",
+    "show_separators": true,
+    "menu_alignment": "Left",
+    "selection_style": "Full Row",
+    "selection_marker": "> ",
+    "header_visible": true,
+    "subtitle_underlined": true,
+    "content_margin": 3,
+    "bracket_menus": true,
+    "extended_highlighting": true
+  }
+}
